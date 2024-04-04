@@ -1,6 +1,4 @@
-
-
-// Calendar.js
+// Calendar.jsx
 import React, { useEffect, useState } from 'react';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import moment from 'moment';
@@ -41,9 +39,6 @@ const CalendarComponent = () => {
           style={{ height: isMobile ? 400 : 600 }}
           view={calendarView}
           onView={handleViewChange}
-          defaultDate={defaultDate} // Set default date to 7:00 AM
-          toolbar={true} // Show toolbar
-          timeslots={2} // Set the interval to 30 minutes
         />
       )}
     </div>

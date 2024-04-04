@@ -8,7 +8,7 @@ const ImageCard = ({ hero, changeImage, Image }) => {
         }
     }
 
-    console.log(hero)
+    // console.log(hero)
 
 
     return (
