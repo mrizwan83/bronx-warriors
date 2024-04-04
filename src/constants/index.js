@@ -59,10 +59,96 @@ export const statistics = [
     { value: "5", label: "Championships Won" },
 ];
 
-export const upcomingEvents = [
-    { date: "2023-08-15", title: "Season Opener vs. Riverdale Raiders", location: "Bronx, NY" },
-    { date: "2023-08-22", title: "Home Game vs. Pelham Panthers", location: "Bronx, NY" },
-    { date: "2023-08-29", title: "Away Game vs. Yonkers Bulldogs", location: "Yonkers, NY" },
+// constants/index.js
+
+export const calendarEvents = [
+    {
+        start: new Date(2024, 3, 1, 10, 0),
+        end: new Date(2024, 3, 1, 12, 0),
+        title: 'Team Meeting',
+        location: 'Bronx Warriors HQ',
+        description: 'Discussion of upcoming season strategies and player development plans.',
+    },
+    {
+        start: new Date(2024, 3, 5, 15, 0),
+        end: new Date(2024, 3, 5, 17, 0),
+        title: 'Training Session',
+        location: 'Bronx Warriors Training Field',
+        description: 'Discussion of upcoming season strategies and player development plans.',
+
+    },
+    {
+        start: new Date(2024, 3, 10, 9, 0),
+        end: new Date(2024, 3, 10, 11, 0),
+        title: 'Tryouts',
+        location: 'Bronx Warriors Stadium',
+        description: 'Discussion of upcoming season strategies and player development plans.',
+
+    },
+    {
+        start: new Date(2024, 3, 15, 18, 0),
+        end: new Date(2024, 3, 15, 20, 0),
+        title: 'Fundraiser Event',
+        location: 'Bronx Community Center',
+        description: 'Discussion of upcoming season strategies and player development plans.',
+
+    },
+    {
+        start: new Date(2024, 3, 22, 14, 0),
+        end: new Date(2024, 3, 22, 16, 0),
+        title: 'Friendly Match',
+        location: 'Bronx Warriors Stadium',
+        description: 'Discussion of upcoming season strategies and player development plans.',
+
+    },
+    {
+        start: new Date(2024, 3, 28, 11, 0),
+        end: new Date(2024, 3, 28, 13, 0),
+        title: 'Team Building Activity',
+        location: 'Bronx Park',
+        description: 'Discussion of upcoming season strategies and player development plans.',
+
+    },
+    {
+        start: new Date(2024, 4, 3, 16, 0),
+        end: new Date(2024, 4, 3, 18, 0),
+        title: 'Training Session',
+        location: 'Bronx Warriors Training Field',
+        description: 'Discussion of upcoming season strategies and player development plans.',
+
+    },
+    {
+        start: new Date(2024, 4, 8, 12, 0),
+        end: new Date(2024, 4, 8, 14, 0),
+        title: 'Press Conference',
+        location: 'Bronx Warriors HQ',
+        description: 'Discussion of upcoming season strategies and player development plans.',
+
+    },
+    {
+        start: new Date(2024, 4, 12, 19, 0),
+        end: new Date(2024, 4, 12, 21, 0),
+        title: 'Fan Meet and Greet',
+        location: 'Bronx Warriors Stadium',
+        description: 'Discussion of upcoming season strategies and player development plans.',
+
+    },
+    {
+        start: new Date(2024, 4, 18, 10, 0),
+        end: new Date(2024, 4, 18, 12, 0),
+        title: 'Charity Event',
+        location: 'Bronx Community Center',
+        description: 'Discussion of upcoming season strategies and player development plans.',
+
+    },
+    {
+        start: new Date(2024, 4, 25, 13, 0),
+        end: new Date(2024, 4, 25, 15, 0),
+        title: 'Youth Football Clinic',
+        location: 'Bronx Warriors Training Field',
+        description: 'Discussion of upcoming season strategies and player development plans.',
+
+    },
 ];
 
 export const testimonials = [

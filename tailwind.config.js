@@ -37,7 +37,8 @@ export default {
       },
       screens: {
         "wide": "1440px"
-      }
+      },
+
     },
   },
   plugins: [],
