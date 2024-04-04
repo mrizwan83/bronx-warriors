@@ -21,41 +21,80 @@
   .input {
     @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
   }
-  .calendar-container {
-    @apply p-4;
-  }
 
-  .reactBigCalendar {
-    @apply font-sans;
-  }
 
-  .reactBigCalendar .rbc-toolbar {
-    @apply bg-gray-100 p-2.5 mb-2.5 flex justify-between items-center flex-wrap;
-  }
+  /* Calendar styles */
+.react-big-calendar {
+  font-family: 'Montserrat', sans-serif;
+}
 
-  .reactBigCalendar .rbc-toolbar-label {
-    @apply text-xl font-bold;
-  }
+.react-big-calendar .rbc-toolbar {
+  background-color: #f1f5f8;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-  .reactBigCalendar .rbc-event {
-    @apply bg-purple-600 text-white rounded px-2 py-1;
-  }
+.react-big-calendar .rbc-toolbar-label {
+  font-size: 24px;
+  font-weight: bold;
+}
 
-  .reactBigCalendar .rbc-event:hover {
-    @apply bg-purple-800;
-  }
+.react-big-calendar .rbc-event {
+  background-color: #3174ad;
+  color: white;
+  border-radius: 4px;
+  padding: 2px 5px;
+}
 
-  .reactBigCalendar .rbc-day-bg {
-    @apply bg-gray-100;
-  }
+.react-big-calendar .rbc-event:hover {
+  background-color: #265a87;
+}
 
-  .reactBigCalendar .rbc-off-range-bg {
-    @apply bg-gray-200;
-  }
+.react-big-calendar .rbc-day-bg {
+  background-color: #f1f5f8;
+}
 
-  .reactBigCalendar .rbc-today {
-    @apply bg-blue-100;
-  }
+.react-big-calendar .rbc-off-range-bg {
+  background-color: #e2e8f0;
+}
+
+.react-big-calendar .rbc-today {
+  background-color: #dbeafe;
+}
+
+.react-big-calendar .special-day {
+  background-color: #fce7e7;
+}
+
+   /* Swiper navigation arrows */
+   .swiper-button-next,
+   .swiper-button-prev {
+     color: #ff4d4d;
+     font-size: 24px;
+     transition: color 0.3s;
+   }
+ 
+   .swiper-button-next:hover,
+   .swiper-button-prev:hover {
+     color: #e63f3f;
+   }
+ 
+   /* Swiper pagination bullets */
+   .swiper-pagination-bullet {
+     background-color: #ff4d4d;
+     opacity: 0.5;
+     width: 12px;
+     height: 12px;
+     transition: opacity 0.3s;
+   }
+ 
+   .swiper-pagination-bullet-active {
+     opacity: 1;
+   }
 
 }
 
