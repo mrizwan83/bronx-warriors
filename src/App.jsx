@@ -5,7 +5,7 @@ import Calender from "./sections/Calender";
 import Services from "./sections/Services";
 import Contact from "./sections/Contact";
 import OurBoard from "./sections/OurBoard";
-import Subscribe from "./sections/Subscribe";
+import Map from "./sections/Map";
 import Footer from "./sections/Footer";
 
 const App = () => {
@@ -31,7 +31,7 @@ const App = () => {
         <Contact />
       </section>
       <section className="padding-x sm:py-32 py-16 w-full">
-        <Subscribe />
+        <Map />
       </section>
       <section className="bg-black padding-x padding-t pb-8">
         <Footer />
