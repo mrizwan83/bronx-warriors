@@ -1,5 +1,15 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import CustomMarker from '../assets/icons/marker-icon.png'
 import 'leaflet/dist/leaflet.css'
+import L from 'leaflet'
+
+const customMarker = new L.Icon({
+  iconUrl: CustomMarker,
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
+})
 
 const Map = () => {
   return (
@@ -25,7 +35,8 @@ const Map = () => {
           url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
         />
 
-        <Marker >
+
+  <Marker position={[40.86701504484206, -73.81013174794911]} icon={customMarker}>
           <Popup>Pelham Bay Park Football Field</Popup>
         </Marker>
       </MapContainer>
