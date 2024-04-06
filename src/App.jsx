@@ -7,6 +7,7 @@ import Contact from "./sections/Contact";
 import OurBoard from "./sections/OurBoard";
 import Map from "./sections/Map";
 import Footer from "./sections/Footer";
+import Forms from "./sections/Forms";
 
 const App = () => {
   return (
@@ -27,11 +28,17 @@ const App = () => {
       <section className="padding">
         <OurBoard />
       </section>
-      <section className="bg-pale-blue padding">
+      <section className="bg-[#f1f5f8] sm:px-12 px-4 sm:py-16 py-12">
         <Contact />
       </section>
-      <section className="padding-x sm:py-32 py-16 w-full">
+
+      {/* <section className="bg-pale-blue padding">
         <Map />
+      </section> */}
+
+
+      <section className="padding-x py-10 w-full">
+        <Forms />
       </section>
       <section className="bg-black padding-x padding-t pb-8">
         <Footer />

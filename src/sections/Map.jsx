@@ -16,7 +16,7 @@ const Map = () => {
       </div>
 
       <MapContainer
-        center={[40.86701504484206, -73.81013174794911]}
+
         zoom={13}
         className='h-96 rounded-sm'
       >
@@ -25,7 +25,7 @@ const Map = () => {
           url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
         />
 
-        <Marker position={[40.86701504484206, -73.81013174794911]}>
+        <Marker >
           <Popup>Pelham Bay Park Football Field</Popup>
         </Marker>
       </MapContainer>
