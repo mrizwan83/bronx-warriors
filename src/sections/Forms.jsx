@@ -3,7 +3,7 @@ import { FaFilePdf } from 'react-icons/fa';
 
 const Forms = () => {
     return (
-        <section id="forms" className="w-full flex flex-col justify-center items-center gap-10 max-container py-20">
+        <section id="forms" className="w-full flex flex-col justify-center items-center gap-10 max-container">
             <div className="text-center">
                 <p className="text-xl font-montserrat text-coral-red">Forms</p>
                 <h2 className="mt-4 font-palanquin text-5xl max-sm:text-4xl font-bold">For Parents</h2>

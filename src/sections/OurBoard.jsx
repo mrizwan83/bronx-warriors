@@ -46,8 +46,8 @@ const OurBoard = () => {
                 ))}
             </div>
             <div className="text-center mt-12">
-                <p className="text-xl font-montserrat m-4 p-1">Forever in our hearts Joe DeSimone</p>
-                <p className="text-xl font-montserrat m-4 p-1">Forever in our hearts Jay Demers</p>
+                <p className="text-xl font-montserrat m-4 p-1">Forever in our Hearts <br />Joe DeSimone</p>
+                <p className="text-xl font-montserrat m-4 p-1">Forever in our Hearts <br />Jay Demers</p>
                 <div className="flex justify-center gap-6 p-4">
                     <a href="https://www.instagram.com/bronx_warriors_football/" target="_blank" rel="noopener noreferrer" className="text-coral-red hover:text-coral-red-dark">
                         <FaInstagram size={50} />
