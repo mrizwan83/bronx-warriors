@@ -96,6 +96,17 @@
   max-height: 400px;
 }
 
+.react-big-calendar.mobile .rbc-agenda-view .rbc-agenda-table .rbc-header:first-child {
+  min-width: 121px;
+}
+
+.react-big-calendar.mobile .rbc-agenda-view .rbc-agenda-table .rbc-header:nth-child(2) {
+  min-width: 184px;
+}
+
+.react-big-calendar.mobile .rbc-agenda-view .rbc-agenda-table .rbc-header:nth-child(3) {
+  min-width: 114px;
+}
    /* Swiper navigation arrows */
    .swiper-button-next,
    .swiper-button-prev {
