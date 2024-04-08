@@ -4,6 +4,7 @@ import moment from 'moment';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import { useMediaQuery } from 'react-responsive';
 import { calendarEvents } from '../constants';
+import Toolbar from '../components/Toolbar';
 
 const localizer = momentLocalizer(moment);
 
@@ -12,7 +13,6 @@ const CalendarComponent = () => {
   const [calendarView, setCalendarView] = useState('month');
 
   const handleViewChange = (view) => {
-    // Handle the view change here
     setCalendarView(view);
   };
 
@@ -40,9 +40,10 @@ const CalendarComponent = () => {
             titleAccessor="title"
             defaultView={calendarView}
             style={{ height: isMobile ? 400 : 600 }}
+            views={isMobile ? ['month', 'day', 'agenda'] : ['month', 'week', 'day', 'agenda']}
             view={calendarView}
             onView={handleViewChange}
-            className="react-big-calendar"
+            className={`react-big-calendar ${isMobile ? 'mobile' : ''}`}
             dayPropGetter={(date) => {
               const className = date.getDate() === 1 ? 'special-day' : '';
               return { className };
@@ -62,6 +63,9 @@ const CalendarComponent = () => {
                   border: 'none',
                 },
               };
+            }}
+            components={{
+              toolbar: Toolbar,
             }}
           />
         )}
