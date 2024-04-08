@@ -32,9 +32,9 @@ import {
 } from "../assets/images";
 
 export const navLinks = [
-    { href: "#", label: "Home" },
     { href: "#about", label: "About Us" },
-    { href: "#register", label: "Register" },
+    { href: "#forms", label: "Forms" },
+    { href: "#gallery", label: "Gallery" },
     { href: "#contact", label: "Contact Us" },
 ];
 
@@ -56,7 +56,7 @@ export const heroImages = [
 export const statistics = [
     { value: "10+", label: "Years of Experience" },
     { value: "500+", label: "Players Trained" },
-    { value: "5", label: "Championships Won" },
+    { value: "5+", label: "Championships Won" },
 ];
 
 // constants/index.js

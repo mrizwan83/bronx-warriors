@@ -13,7 +13,7 @@ const Hero = () => {
     return (
         //  usually its flex column but if its xl screen then its flex row full height
         <section id="home" className='w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container'>
-            <div className='relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28'>
+            <div className='relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28 z-10'>
                 <p className="text-xl font-montserrat text-coral-red">Youth and Adolescent League</p>
                 <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold">
                     <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-12 rounded-r-[50px] ">Bronx <span className="text-coral-red">Warriors</span></span>
@@ -24,8 +24,8 @@ const Hero = () => {
 
 
                 </h1>
-                <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">Established in 1952, the Warriors Football League brings together youths and volunteers in the Pelham Bay Park area of The Bronx.</p>
-                <Button label="Register now" iconUrl={arrowRight} />
+                <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">Welcome to the Warriors Football League, fostering community spirit and youth development since 1952 in the vibrant Pelham Bay Park area of The Bronx.</p>
+                <Button label="Learn More" iconUrl={arrowRight} />
                 {/* statistics, flex-wrap for collapsing on small devices */}
                 <div className='flex justify-start items-start flex-wrap w-full mt-20 gap-16'>
                     {statistics.map((stat) => (

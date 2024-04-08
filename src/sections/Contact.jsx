@@ -120,7 +120,7 @@ const Contact = () => {
                         </a>
                     </div>
 
-                    <div className="w-full h-96">
+                    <div id='location' className="w-full h-96">
                         <MapContainer
                             center={[40.86701504484206, -73.81013174794911]}// Bronx Warriors location coordinates
                             zoom={13}

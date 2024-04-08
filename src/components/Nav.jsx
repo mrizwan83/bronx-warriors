@@ -1,32 +1,3 @@
-// import { org_logo } from '../assets/images'
-// import { hamburger } from '../assets/icons';
-// import { navLinks } from '../constants';
-// const Nav = () => {
-//     return (
-//         // for better access use semantic tags
-//         <header className='padding-x py-8 absolute z-10 w-full bg-slate-950'>
-//             <nav className='flex justify-between items-center max-container'>
-//                 <a href="/">
-//                     <img src={org_logo} alt="Logo" width={50} height={50} />
-//                 </a>
-//                 {/* // only visible on large screens */}
-//                 <ul className='flex-1 flex justify-center items-center gap-16 max-lg:hidden'>
-//                     {navLinks.map((item) => (
-//                         <li key={item.label}>
-//                             <a href={item.href} className='font-montserrat leading-normal text-lg text-white transition duration-300'>{item.label}</a>
-//                         </li>))}
-//                 </ul>
-//                 {/* // only visible on small screens */}
-//                 <div className='max-lg:block hidden'>
-//                     <img src={hamburger} alt='hamburger' width={25} height={25} />
-//                 </div>
-//             </nav>
-//         </header>
-//     )
-// }
-
-// export default Nav
-
 import { org_logo } from '../assets/images';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { navLinks } from '../constants';
@@ -39,8 +10,11 @@ const Nav = () => {
         setIsOpen(!isOpen);
     };
 
+    const handleLinkClick = () => {
+        setIsOpen(false);
+    };
     return (
-        <header className='padding-x py-8 absolute z-10 w-full bg-slate-950'>
+        <header className='padding-x py-8 absolute z-10 w-full bg-black'>
             <nav className='flex justify-between items-center max-container'>
                 <a href="/">
                     <img src={org_logo} alt="Logo" width={50} height={50} />
@@ -49,33 +23,48 @@ const Nav = () => {
                 <ul className='flex-1 flex justify-center items-center gap-16 max-lg:hidden'>
                     {navLinks.map((item) => (
                         <li key={item.label}>
-                            <a href={item.href} className='font-montserrat leading-normal text-lg text-white transition duration-300'>{item.label}</a>
+                            <a
+                                href={item.href}
+                                className='font-montserrat leading-normal text-lg text-white transition duration-300 hover:text-coral-red'
+                            >
+                                {item.label}
+                            </a>
                         </li>
                     ))}
                 </ul>
                 {/* // only visible on small screens */}
                 <div className='max-lg:block hidden'>
                     <button onClick={toggleMenu}>
-                        {isOpen ? <FaTimes size={25} /> : <FaBars size={25} />}
+                        {isOpen ? (
+                            <FaTimes className='text-coral-red' size={25} />
+                        ) : (
+                            <FaBars className='text-coral-red' size={25} />
+                        )}
                     </button>
                 </div>
             </nav>
             {/* Mobile menu */}
             {isOpen && (
-                <div className='max-lg:block hidden absolute top-0 left-0 w-full h-screen bg-slate-950'>
+                <div className='max-lg:block hidden fixed top-0 left-0 w-full rounded-b-[70px] bg-[#f1f5f8] z-50'>
                     <div className='padding-x py-8'>
                         <div className='flex justify-between items-center'>
                             <a href="/">
                                 <img src={org_logo} alt="Logo" width={50} height={50} />
                             </a>
                             <button onClick={toggleMenu}>
-                                <FaTimes size={25} />
+                                <FaTimes className='text-coral-red' size={25} />
                             </button>
                         </div>
-                        <ul className='mt-8 flex flex-col gap-6'>
+                        <ul className='mt-8 flex flex-col gap-6 items-end'>
                             {navLinks.map((item) => (
                                 <li key={item.label}>
-                                    <a href={item.href} className='font-montserrat leading-normal text-lg text-white transition duration-300'>{item.label}</a>
+                                    <a
+                                        href={item.href}
+                                        className='font-montserrat leading-normal text-lg text-coral-red transition duration-300 hover:bg-coral-red hover:text-white px-4 py-2 rounded-md'
+                                        onClick={handleLinkClick}
+                                    >
+                                        {item.label}
+                                    </a>
                                 </li>
                             ))}
                         </ul>
