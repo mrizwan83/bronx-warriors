@@ -32,10 +32,10 @@ import {
 } from "../assets/images";
 
 export const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About Us" },
-    { href: "/register", label: "Register" },
-    { href: "/contact", label: "Contact Us" },
+    { href: "#", label: "Home" },
+    { href: "#about", label: "About Us" },
+    { href: "#register", label: "Register" },
+    { href: "#contact", label: "Contact Us" },
 ];
 
 export const heroImages = [
