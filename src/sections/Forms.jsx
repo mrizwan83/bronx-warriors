@@ -1,5 +1,9 @@
 import React from 'react';
 import { FaFilePdf } from 'react-icons/fa';
+import Covid_Safety_Form from '../assets/forms/Covid_Safety_Plan.pdf';
+import General_Principles_Form from '../assets/forms/General_Principles.pdf';
+import Medical_Waiver_Form from '../assets/forms/Medical_Waiver.pdf';
+import Parents_Pledge_Form from '../assets/forms/Parents_Pledge.pdf';
 
 const Forms = () => {
     return (
@@ -18,7 +22,7 @@ const Forms = () => {
                     <ul className="space-y-6">
                         <li>
                             <a
-                                href="/path/to/general-principles.pdf"
+                                href={General_Principles_Form}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center text-coral-red hover:text-coral-red-dark"
@@ -29,7 +33,7 @@ const Forms = () => {
                         </li>
                         <li>
                             <a
-                                href="/path/to/parent-pledge.pdf"
+                                href={Parents_Pledge_Form}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center text-coral-red hover:text-coral-red-dark"
@@ -40,7 +44,7 @@ const Forms = () => {
                         </li>
                         <li>
                             <a
-                                href="/path/to/medical-waiver.pdf"
+                                href={Medical_Waiver_Form}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center text-coral-red hover:text-coral-red-dark"
@@ -55,7 +59,7 @@ const Forms = () => {
                     <h3 className="text-3xl font-bold mb-6">COVID-19 Safety Plan</h3>
                     <p className="text-slate-gray mb-6">Please download and fill out the COVID-19 Safety Plan form.</p>
                     <a
-                        href="/path/to/covid-safety-plan.pdf"
+                        href={Covid_Safety_Form}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center text-coral-red hover:text-coral-red-dark"
