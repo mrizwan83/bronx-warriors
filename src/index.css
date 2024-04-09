@@ -101,10 +101,23 @@
 }
 
 .react-big-calendar.mobile .rbc-agenda-view .rbc-agenda-table .rbc-header:nth-child(2) {
-  min-width: 184px;
+  min-width: 190px;
 }
 
 .react-big-calendar.mobile .rbc-agenda-view .rbc-agenda-table .rbc-header:nth-child(3) {
+  min-width: 114px;
+}
+
+
+.react-big-calendar.mobile .rbc-agenda-view .rbc-agenda-content .rbc-agenda-table .rbc-agenda-date-cell {
+  min-width: 121px;
+}
+
+.react-big-calendar.mobile .rbc-agenda-view .rbc-agenda-content .rbc-agenda-table .rbc-agenda-time-cell {
+  min-width: 190px;
+}
+
+.react-big-calendar.mobile .rbc-agenda-view .rbc-agenda-content .rbc-agenda-table .rbc-agenda-event-cell {
   min-width: 114px;
 }
    /* Swiper navigation arrows */
