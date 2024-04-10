@@ -29,13 +29,46 @@ const Footer = () => {
         <div className='w-full md:w-auto text-center mb-6 md:mb-0'>
           <h5 className='font-bold mb-4'>Quick Links</h5>
           <ul className='grid grid-cols-2 gap-2 text-sm w-36 mx-auto'>
-            {navLinks.map((item) => (
-              <li key={item.label} className=' '>
-                <a href={item.label} className='hover:text-gray-300'>
-                  {item.label}
-                </a>
-              </li>
-            ))}
+            <li>
+              <a href='#' className=''>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href='#about' className=''>
+                About
+              </a>
+            </li>
+            <li>
+              <a href='#forms' className=''>
+                Forms
+              </a>
+            </li>
+            <li>
+              <a href='#gallery' className=''>
+                Gallery
+              </a>
+            </li>
+            <li>
+              <a href='#calendar' className=''>
+                Calendar
+              </a>
+            </li>
+            <li>
+              <a href='#board' className=''>
+                Board
+              </a>
+            </li>
+            <li>
+              <a href='#contact' className=''>
+                Contact
+              </a>
+            </li>
+            <li>
+              <a href='#location' className=''>
+                Location
+              </a>
+            </li>
           </ul>
         </div>
         <div className='w-full md:w-auto mb-6 md:mb-0 text-center'>
