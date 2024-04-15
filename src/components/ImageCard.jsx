@@ -8,8 +8,6 @@ const ImageCard = ({ hero, changeImage, Image }) => {
         }
     }
 
-    // console.log(hero)
-
 
     return (
         <div className={`border-2 rounded-xl 

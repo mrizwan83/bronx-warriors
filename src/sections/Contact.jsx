@@ -111,7 +111,7 @@ const Contact = () => {
 
                     <div className='text-5xl font-bold text-center mb-4 p-2'>
                         <a
-                            href={`https://www.google.com/maps/dir/?api=1&destination=${40.86701504484206},${-73.81013174794911}`}
+                            href={`https://www.google.com/maps/dir/?api=1&destination=${40.84910001733011},${-73.82295388835792}`}
                             target='_blank'
                             rel='noopener noreferrer'
                         >
@@ -122,8 +122,9 @@ const Contact = () => {
 
                     <div id='location' className="w-full h-96">
                         <MapContainer
-                            center={[40.86701504484206, -73.81013174794911]}// Bronx Warriors location coordinates
-                            zoom={13}
+
+                            center={[40.84910001733011, -73.82295388835792]}// Bronx Warriors location coordinates
+                            zoom={15}
                             scrollWheelZoom={false}
                             className="h-full w-full rounded-lg"
                         >
@@ -131,9 +132,10 @@ const Contact = () => {
                                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                             />
-                            <Marker position={[40.86701504484206, -73.81013174794911]} icon={customMarker}>
+                            <Marker position={[40.84910001733011, -73.82295388835792]} icon={customMarker}>
                                 <Popup>
-                                    Bronx Warriors <br /> Middletown Road & Stadium Avenue
+                                    Bronx Warriors Pelham Bay Park
+                                    <br /> Middletown Road & Stadium Avenue
                                     <br />
                                     Bronx, NY 10465
                                 </Popup>
