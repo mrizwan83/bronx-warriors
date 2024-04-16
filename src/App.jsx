@@ -33,7 +33,6 @@ const App = () => {
       <section className="bg-[#f1f5f8] sm:px-12 px-4 sm:py-16 py-12">
         <Contact />
       </section>
-
       <section className="bg-black sm:px-12 px-8 py-8">
         <Footer />
       </section>

@@ -70,7 +70,7 @@ const Forms = () => {
                 </div>
                 <div className="bg-white shadow-lg rounded-lg p-8">
                     <h3 className="text-3xl font-bold mb-6">Age Requirements</h3>
-                    <p className="text-slate-gray">Please follow the guidelines below for your child.</p>
+                    <p className="text-slate-gray mb-6">Please follow the guidelines below for your child.</p>
                     <ul className="space-y-6">
                         <li>Age 5-7: Instructional Division</li>
                         <li>Age 8-10: Junior Division</li>

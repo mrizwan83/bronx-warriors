@@ -26,7 +26,7 @@ const OurBoard = () => {
     ];
 
     return (
-        <div className='xl:px-24'>
+        <div className='xl:px-16 sm:px-8 2xl:px-24'>
             <div className="text-center">
                 <p className="text-xl font-montserrat text-coral-red">Our Board</p>
                 <h2 className="m-4 font-palanquin text-5xl max-sm:text-4xl font-bold">Warriors Football League Inc.</h2>
